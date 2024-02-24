@@ -7,4 +7,22 @@ let accountCity
 var accountSalary = "2000000"
 // var is not prefered to be used due to issue in block scope and functionl scope
 
-console.table([accountId, accountName, accountEmail, accountCity, accountSalary]);
+//console.table([accountId, accountName, accountEmail, accountCity, accountSalary]);
+
+// data types :
+let name = "August"
+let age = 21
+let grad
+let result = null
+//  number => 2 to power 53
+//  BigInt
+//  string=> ""
+//  boolean=> true/false
+//  null=> standalone value 
+//  undefined
+//  symbol
+
+console.log(typeof null)
+//above statement says it is object
+console.log(typeof undefined)
+//whereas above statement gives it is undefined
