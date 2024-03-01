@@ -23,3 +23,27 @@ let myObj = {
 const myFunction = function(){
     console.log("Love and Shine")
 }
+
+
+// ++++++++++++++++++++++++++++++
+
+// Stack (Primitive)=>copy of value created , Heap(Non-Primitive) =>referenced to the original location of variable
+
+let name01 = "Anushka"
+let nameOfEmp = name01
+nameOfEmp = "August"
+
+console.log(name01)
+console.log(nameOfEmp)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "anu@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
