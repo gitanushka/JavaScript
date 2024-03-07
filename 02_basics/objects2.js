@@ -64,3 +64,20 @@ console.log(Object.values(user));
 console.log(Object.entries(user));
 
 console.log(user.hasOwnProperty('isLoggedIn'));
+
+
+//destructuring of object
+
+const course = {
+    courseName: "Javascript",
+    price: "999",
+    courseInstructor: "Sam"
+}
+
+//to access : course.courseInstructor
+//better way
+const {courseInstructor: instructor} = course
+//console.log(courseInstructor);
+ console.log(instructor);
+
+ 
