@@ -46,3 +46,46 @@ const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const newNum = myNumbers.map( (num) => num + 10)
 console.log(newNum)
+
+//chaining methods
+
+const numNew = myNumbers
+                .map( (num) => num*10 )
+                .map( (num)=> num+1 )
+                .filter( (num)=> num>=40 )
+
+console.log(numNew)
+
+
+//...............reduce.................
+
+const number = [1,2,3]
+// initial value 0 is assigned to acc and acc+currval returned to acc 
+// const myTotal = number.reduce( function (acc,currval) {
+//    console.log(`accumulator: ${acc} and currentvalue: ${currval}`);   
+//    return acc+currval
+// }, 0 )
+
+//using arrow function
+
+const myTotal = number.reduce( (acc,currval) => (acc+currval), 0)
+
+console.log(myTotal)
+
+const shoppingCart = [
+  {
+     course: 'javascript',
+     price: 299
+  },
+  {
+    course: 'cloud',
+    price: 599
+  },
+  {
+  course: 'python',
+  price: 399
+  }
+]
+
+const totalPrice = shoppingCart.reduce( (acc,item) => (acc+item.price),0 )
+console.log(totalPrice)
