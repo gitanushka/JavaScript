@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+     <style>
+        .bg-black{
+            background-color: #212121;
+            color: antiquewhite;
+        }
+     </style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+    </div>    
+</body>
+<script>
+     const parent = document.querySelector('.parent')
+     console.log(parent);
+     console.log(parent.children);
+     console.log(parent.children[1].innerHTML)
+
+     for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+     }
+     parent.children[1].style.color = "orange"
+     console.log(parent.firstElementChild);
+     const dayOne = document.querySelector('.day')
+     console.log(dayOne);
+     console.log(dayOne.parentElement);
+     console.log(dayOne.nextElementSibling);
+     
+    //NodeList
+    console.log("NODES: ", parent.childNodes);
+
+</script>
+</html>
+
+
+<!-- //DOM Manipulation
+
+document.getElementById('firstHeading')
+// output would be a tag with the same id and its content
+
+document.getElementById('firstHeading').innerHTML = "<h1>Let's Learn Javascript</h1>"
+
+//diff between innerText , innerHTML, innerTextContent
+-->
