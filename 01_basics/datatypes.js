@@ -17,7 +17,7 @@ const actors = ["dylan wang","xu kai","wang xiyi"]
 //Object
 let myObj = {
     name : "Anushka",
-    age : 21,
+    age : 21
 }
 //Function
 const myFunction = function(){

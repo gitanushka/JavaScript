@@ -23,6 +23,6 @@ console.log(valueInNumber3)
 //string value that cant be converted to number gives NaN
 
 let isLoggedIn = true
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+let booleanIsLoggedIn = Number(isLoggedIn)
 console.log(booleanIsLoggedIn)
 
